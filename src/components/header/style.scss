@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__nav {
+    display: flex;
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        margin-left: 60px;
+        &:hover {
+          text-decoration: underline black;
+        }
+      }
+    }
+  }
+}
