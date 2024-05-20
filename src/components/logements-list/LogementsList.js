@@ -6,7 +6,7 @@ const LogementsList = () => {
   return (
     <div>
       {logements.map((logement) => (
-        <LogementCard logement={logement} />
+        <LogementCard logement={logement} key={logement.id} />
       ))}
     </div>
   );
