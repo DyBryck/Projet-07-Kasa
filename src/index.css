@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  max-width: 1440px;
+  padding: 45px 100px 0 100px;
   margin: 0;
   font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #root {
@@ -10,4 +13,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
