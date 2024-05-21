@@ -11,6 +11,7 @@ const LogementCard = (props) => {
           src={logement.cover}
           alt={`${logement.title}`}
         />
+        <div className="link__logement-card__opaque"></div>
         <h3 className="link__logement-card__title">{logement.title}</h3>
       </div>
     </Link>

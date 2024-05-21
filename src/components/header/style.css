@@ -1,8 +1,8 @@
 .header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 40px 100px 0 100px;
 }
 .header__nav {
   display: flex;
@@ -22,5 +22,5 @@
 }
 .header__nav__list__link:hover {
   -webkit-text-decoration: underline black;
-  text-decoration: underline black;
-} /*# sourceMappingURL=style.css.map */
+          text-decoration: underline black;
+}/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,9 @@
 .logements-list {
-  width: 100%;
+  padding: 55px 50px 45px 50px;
   background-color: #f6f6f6;
   border-radius: 25px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 60px;
+  grid-row-gap: 50px;
 }/*# sourceMappingURL=style.css.map */
