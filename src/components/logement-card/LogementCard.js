@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const LogementCard = (props) => {
   const { logement } = props;
   return (
-    <Link to={`/logement/${logement.id}`}>
-      <div className="logement-card">
-        <h2>{logement.title}</h2>
-        <p>{logement.description}</p>
+    <Link className="link" to={`/logement/${logement.id}`}>
+      <div className="link__logement-card">
+        <img
+          className="link__logement-card__cover"
+          src={logement.cover}
+          alt={`${logement.title}`}
+        />
+        <h3 className="link__logement-card__title">{logement.title}</h3>
       </div>
     </Link>
   );

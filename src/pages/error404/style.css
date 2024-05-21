@@ -1,0 +1,32 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-container__title {
+  margin: 140px 0;
+  color: #ff6060;
+  text-align: center;
+  font-size: 288px;
+  font-style: normal;
+  font-weight: 700;
+}
+.error-container__caption {
+  margin: 0 0 140px 0;
+  color: #ff6060;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+}
+.error-container__link {
+  margin: 0 0 140px 0;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+.error-container__link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
