@@ -1,0 +1,19 @@
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+}
+.tags-container__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 0 5px;
+}/*# sourceMappingURL=style.css.map */

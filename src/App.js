@@ -5,14 +5,13 @@ import {
   Routes,
 } from "react-router-dom";
 import "./App.css";
-import { Banner, Footer, Header } from "./components";
+import { Footer, Header } from "./components";
 import { AboutUs, Error404, Home, Logement } from "./pages";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Banner />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Navigate replace to="/" />} />

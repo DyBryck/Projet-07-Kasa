@@ -9,10 +9,6 @@ body {
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 1440px;
   width: 100%;
 }/*# sourceMappingURL=index.css.map */

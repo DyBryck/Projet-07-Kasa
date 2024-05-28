@@ -1,0 +1,34 @@
+.carousel {
+  width: 100%;
+  height: 415px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.carousel__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel__arrow {
+  position: absolute;
+  cursor: pointer;
+}
+.carousel__arrow__left {
+  left: 0px;
+}
+.carousel__arrow__right {
+  right: 0px;
+}
+.carousel__picture-counter {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
