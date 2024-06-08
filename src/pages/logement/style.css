@@ -51,6 +51,11 @@
   border-radius: 25px;
   overflow: hidden;
 }
+@media (max-width: 1024px) {
+  .carousel {
+    height: 255px;
+  }
+}
 .carousel__image {
   height: 100%;
   width: 100%;
@@ -60,6 +65,12 @@
 .carousel__arrow {
   position: absolute;
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .carousel__arrow {
+    width: 24px;
+    height: 24px;
+  }
 }
 .carousel__arrow__left {
   left: 0px;
@@ -73,4 +84,9 @@
   color: white;
   font-weight: 500;
   font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .carousel__picture-counter {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

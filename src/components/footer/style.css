@@ -6,10 +6,21 @@
   align-items: center;
   background-color: black;
   color: white;
+  padding: 66px 0 29px 0;
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding-bottom: 58px;
+  }
 }
 .footer__logo {
-  margin: 65px 0 30px 0;
+  margin: 0 0 30px 0;
 }
 .footer__copyright {
-  margin: 0 0 30px 0;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .footer__copyright {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,11 @@
   margin-bottom: 50px;
 }
 @media (max-width: 1024px) {
+  .header {
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 1024px) {
   .header__logo {
     width: 145px;
     height: 47px;
@@ -27,6 +32,11 @@
   text-decoration: none;
   color: black;
   margin-left: 60px;
+}
+@media (max-width: 1024px) {
+  .header__nav__list__link {
+    margin-left: 23px;
+  }
 }
 .header__nav__list__link:hover {
   -webkit-text-decoration: underline black;

@@ -44,6 +44,12 @@
 
     @media (max-width: 1024px) {
       font-size: 24px;
+      width: 80%;
+      text-align: center;
+    }
+
+    @media (max-width: 497px) {
+      text-align: left;
     }
   }
 

@@ -1,6 +1,7 @@
 .tags-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .tags-container__item {
   display: flex;
@@ -13,6 +14,14 @@
   color: white;
   font-weight: 700;
   font-size: 14px;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
   padding: 0 5px;
+}
+@media (max-width: 1024px) {
+  .tags-container__item {
+    height: 18px;
+    font-size: 10px;
+    min-width: 84px;
+    margin: 0 10px 5px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

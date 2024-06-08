@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &__title {
     margin: 140px 0;
     color: #ff6060;
@@ -10,14 +11,27 @@
     font-size: 288px;
     font-style: normal;
     font-weight: 700;
+
+    @media (max-width: 1024px) {
+      margin: 113px 0;
+      font-size: 96px;
+    }
   }
+
   &__caption {
     margin: 0 0 140px 0;
     color: #ff6060;
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      margin-bottom: 113px;
+    }
   }
+
   &__link {
     margin: 0 0 140px 0;
     color: #000;
@@ -25,6 +39,12 @@
     font-style: normal;
     font-weight: 500;
     text-decoration: none;
+
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      margin-bottom: 113px;
+    }
+
     &:hover {
       text-decoration: underline;
     }

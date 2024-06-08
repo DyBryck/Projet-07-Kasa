@@ -8,29 +8,35 @@ const LogementInformations = (props) => {
   const { logement } = props;
   return (
     <div className="logement-informations-container">
-      <div className="logement-informations-container__host-details">
-        <div className="logement-informations-container__caption">
-          <h2 className="logement-informations-container__caption__title">
-            {logement.title}
-          </h2>
-          <p className="logement-informations-container__caption__location">
-            {logement.location}
-          </p>
+      <div className="logement-informations-container__infos">
+        <div className="logement-informations-container__label-and-tags">
+          <div className="logement-informations-container__label-and-tags__label">
+            <h2 className="logement-informations-container__label-and-tags__label__title">
+              {logement.title}
+            </h2>
+            <p className="logement-informations-container__label-and-tags__label__location">
+              {logement.location}
+            </p>
+          </div>
+          <div className="logement-informations-container__label-and-tags__tags">
+            <Tags tags={logement.tags} />
+          </div>
         </div>
-        <div className="logement-informations-container__profile-container">
-          <p className="logement-informations-container__profile-container__name">
-            {logement.host.name}
-          </p>
-          <img
-            className="logement-informations-container__profile-container__picture"
-            src={logement.host.picture}
-            alt={"Photo de profil de " + logement.host.name}
-          />
+        <div className="logement-informations-container__profile-and-stars">
+          <div className="logement-informations-container__profile-and-stars__profile">
+            <p className="logement-informations-container__profile-and-stars__profile__name">
+              {logement.host.name}
+            </p>
+            <img
+              className="logement-informations-container__profile-and-stars__profile__picture"
+              src={logement.host.picture}
+              alt={"Photo de profil de " + logement.host.name}
+            />
+          </div>
+          <div className="logement-informations-container__profile-and-stars__stars">
+            <Stars rating={logement.rating} />
+          </div>
         </div>
-      </div>
-      <div className="logement-informations-container__tags-and-stars">
-        <Tags tags={logement.tags} />
-        <Stars rating={logement.rating} />
       </div>
       <div className="logement-informations-container__collapses">
         <div className="logement-informations-container__collapses__div">

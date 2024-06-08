@@ -12,12 +12,10 @@ const AboutUs = () => {
         opacity="light"
       />
       <div>
-        {auboutUsContent.map((aboutUsItem) => (
-          <Collapse
-            key={aboutUsItem.id}
-            title={aboutUsItem.title}
-            content={aboutUsItem.content}
-          />
+        {auboutUsContent.map((aboutUsItem, index) => (
+          <div key={aboutUsItem.id + "" + index} className="about-us-collapse">
+            <Collapse title={aboutUsItem.title} content={aboutUsItem.content} />
+          </div>
         ))}
       </div>
     </div>

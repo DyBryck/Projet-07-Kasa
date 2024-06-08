@@ -4,19 +4,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 1024px) {
-  body {
-    padding: 20px 20px 0 20px;
-  }
+  margin: 0 auto;
 }
 
 .container {
   padding: 45px 100px 0 100px;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  .container {
+    padding: 20px 20px 27px 20px;
+  }
+}
 
 #root {
   max-width: 1440px;
   width: 100%;
+}
+
+.about-us-collapse {
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .about-us-collapse {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */
