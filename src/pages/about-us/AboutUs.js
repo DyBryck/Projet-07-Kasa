@@ -14,7 +14,7 @@ const AboutUs = () => {
       <div>
         {auboutUsContent.map((aboutUsItem) => (
           <Collapse
-            id={aboutUsItem.id}
+            key={aboutUsItem.id}
             title={aboutUsItem.title}
             content={aboutUsItem.content}
           />

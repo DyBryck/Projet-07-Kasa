@@ -12,6 +12,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 40px;
 }
+@media (max-width: 1024px) {
+  .banner-container {
+    height: 111px;
+  }
+}
 .banner-container__opaque-filter {
   width: 100%;
   height: 100%;
@@ -37,6 +42,11 @@
   font-weight: 700;
   position: absolute;
   margin: 0;
+}
+@media (max-width: 1024px) {
+  .banner-container__title {
+    font-size: 24px;
+  }
 }
 .banner-container__image {
   width: 100%;

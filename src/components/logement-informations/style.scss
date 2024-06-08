@@ -29,7 +29,6 @@
   &__profile-container {
     display: flex;
     flex-direction: row;
-    width: 20%;
     justify-content: right;
     align-items: center;
 
@@ -39,6 +38,7 @@
       font-size: 18px;
       text-align: right;
       margin-right: 10px;
+      width: 50%;
     }
 
     &__picture {
@@ -48,8 +48,21 @@
     }
   }
 
+  &__tags-and-stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
   &__collapses {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    &__div {
+      width: 47%;
+    }
   }
 }

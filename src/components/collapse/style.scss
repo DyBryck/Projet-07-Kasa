@@ -1,8 +1,54 @@
 .collapse-container {
   &__title {
+    cursor: pointer;
+    display: flex;
     margin: 0;
+    background-color: #ff6060;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
   }
-  &__content {
+  &__arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__arrow {
+      width: 24px;
+      height: 14px;
+
+      &__in {
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-180deg);
+      }
+
+      &__out {
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__content-open {
+    padding: 25px 28px 20px 20px;
+    font-weight: 400;
+    font-size: 18px;
     margin: 0;
+    border-radius: 5px;
+    background-color: #f6f6f673;
+    border-radius: 5px;
+
+    & p {
+      margin: 0;
+    }
+
+    & ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 }

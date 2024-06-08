@@ -3,6 +3,11 @@
   height: 340px;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 1024px) {
+    height: 255px;
+  }
+
   &__logement-card {
     height: 100%;
     width: 100%;

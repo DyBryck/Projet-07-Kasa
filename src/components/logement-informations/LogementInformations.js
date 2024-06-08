@@ -1,5 +1,6 @@
 import React from "react";
 import Collapse from "../collapse/Collapse";
+import Stars from "../stars/Stars";
 import Tags from "../tags/Tags";
 import "./style.css";
 
@@ -29,10 +30,15 @@ const LogementInformations = (props) => {
       </div>
       <div className="logement-informations-container__tags-and-stars">
         <Tags tags={logement.tags} />
+        <Stars rating={logement.rating} />
       </div>
       <div className="logement-informations-container__collapses">
-        <Collapse title="Description" content={logement.description} />
-        <Collapse title="Équipements" content={logement.equipements} />
+        <div className="logement-informations-container__collapses__div">
+          <Collapse title="Description" content={logement.description} />
+        </div>
+        <div className="logement-informations-container__collapses__div">
+          <Collapse title="Équipements" content={logement.equipments} />
+        </div>
       </div>
     </div>
   );

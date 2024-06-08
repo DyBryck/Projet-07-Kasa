@@ -25,7 +25,6 @@
 .logement-informations-container__profile-container {
   display: flex;
   flex-direction: row;
-  width: 20%;
   justify-content: right;
   align-items: center;
 }
@@ -35,13 +34,25 @@
   font-size: 18px;
   text-align: right;
   margin-right: 10px;
+  width: 50%;
 }
 .logement-informations-container__profile-container__picture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
+.logement-informations-container__tags-and-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
 .logement-informations-container__collapses {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.logement-informations-container__collapses__div {
+  width: 47%;
 }/*# sourceMappingURL=style.css.map */

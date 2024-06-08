@@ -5,8 +5,10 @@ const Tags = (props) => {
   const { tags } = props;
   return (
     <div className="tags-container">
-      {tags.map((tag) => (
-        <div className="tags-container__item">{tag}</div>
+      {tags.map((tag, i) => (
+        <div key={tag + "-" + i} className="tags-container__item">
+          {tag}
+        </div>
       ))}
     </div>
   );
