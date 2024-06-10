@@ -1,4 +1,10 @@
 .collapse-container {
+  & ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
   &__title {
     cursor: pointer;
     display: flex;
@@ -33,15 +39,28 @@
     }
   }
 
-  &__content-open {
-    padding: 25px 28px 20px 20px;
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0;
-    border-radius: 5px;
-    background-color: #f6f6f673;
-    border-radius: 5px;
+  &__content {
+    display: flex;
 
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__text {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+      background-color: #f6f6f6;
+      border-radius: 5px;
+    }
+  }
+
+  .collapse-container__content.is-open .collapse-container__content__text {
+    max-height: 100%;
+    padding: 20px;
+  }
+
+  &__content-open {
     & p {
       margin: 0;
     }

@@ -5,6 +5,7 @@ const Collapse = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const collapseTitle = props.title;
   const collapseContent = props.content;
+
   return (
     <div className="collapse-container">
       <h3
@@ -24,25 +25,29 @@ const Collapse = (props) => {
           />
         </div>
       </h3>
-      {isOpen && (
-        <div
-          className={
-            isOpen
-              ? "collapse-container__content-open"
-              : "collapse-container__content"
-          }
-        >
-          {Array.isArray(collapseContent) ? (
-            <ul>
+      <div
+        className={
+          isOpen
+            ? "collapse-container__content is-open"
+            : "collapse-container__content"
+        }
+      >
+        {Array.isArray(collapseContent) ? (
+          <div className="collapse-container__content__wrapper">
+            <ul className="collapse-container__content__text">
               {collapseContent.map((content, i) => (
                 <li key={content + "-" + i}>{content}</li>
               ))}
             </ul>
-          ) : (
-            <p>{collapseContent}</p>
-          )}
-        </div>
-      )}
+          </div>
+        ) : (
+          <div className="collapse-container__content__wrapper">
+            <div className="collapse-container__content__text">
+              {collapseContent}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
