@@ -32,21 +32,21 @@ const Collapse = (props) => {
             : "collapse-container__content"
         }
       >
-        {Array.isArray(collapseContent) ? (
-          <div className="collapse-container__content__wrapper">
-            <ul className="collapse-container__content__text">
+        <div
+          className={`collapse-container__content__text ${
+            isOpen ? "collapse-container__content__open" : ""
+          }`}
+        >
+          {Array.isArray(collapseContent) ? (
+            <ul>
               {collapseContent.map((content, i) => (
                 <li key={content + "-" + i}>{content}</li>
               ))}
             </ul>
-          </div>
-        ) : (
-          <div className="collapse-container__content__wrapper">
-            <div className="collapse-container__content__text">
-              {collapseContent}
-            </div>
-          </div>
-        )}
+          ) : (
+            <div>{collapseContent}</div>
+          )}
+        </div>
       </div>
     </div>
   );
