@@ -10,8 +10,7 @@ const Navigation = () => {
       <div className="container">
         <Header />
         <Routes>
-          <Route exact path="/index" element={<Home />} />
-          <Route exact path="/home" element={<Navigate replace to="/" />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/about-us" element={<AboutUs />} />
           <Route exact path="/logement/:id" element={<Logement />} />
           <Route exact path="/error-404" element={<Error404 />} />

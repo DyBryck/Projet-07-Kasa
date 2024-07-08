@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const Banner = (props) => {
-  const { title, image, opacity } = props;
+const Banner = ({ title, image, opacity }) => {
   return (
     <div className="banner-container">
       <div

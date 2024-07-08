@@ -4,8 +4,7 @@ import Stars from "../stars/Stars";
 import Tags from "../tags/Tags";
 import "./style.css";
 
-const LogementInformations = (props) => {
-  const { logement } = props;
+const LogementInformations = ({ logement }) => {
   return (
     <div className="logement-informations-container">
       <div className="logement-informations-container__infos">

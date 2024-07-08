@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 
-const LogementCard = (props) => {
-  const { logement } = props;
+const LogementCard = ({ logement }) => {
   return (
     <Link className="link" to={`/logement/${logement.id}`}>
       <div className="link__logement-card">

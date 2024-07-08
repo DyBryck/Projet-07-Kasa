@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const Tags = (props) => {
-  const { tags } = props;
+const Tags = ({ tags }) => {
   return (
     <div className="tags-container">
       {tags.map((tag, i) => (

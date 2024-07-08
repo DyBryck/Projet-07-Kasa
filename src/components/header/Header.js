@@ -6,13 +6,13 @@ import "./style.css";
 const Header = () => {
   return (
     <header className="header">
-      <Link to="/index">
+      <Link to="/">
         <img className="header__logo" src={logo} alt="Logo Kasa" />
       </Link>
       <nav className="header__nav">
         <ul className="header__nav__list">
           <li>
-            <NavLink className="header__nav__list__link" to="/index">
+            <NavLink className="header__nav__list__link" to="/">
               Accueil
             </NavLink>
           </li>
