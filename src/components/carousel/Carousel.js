@@ -4,6 +4,7 @@ import arrow_right from "../../assets/arrow_right.png";
 
 const Carousel = ({ activeLogement }) => {
   const [pictureIndex, setPictureIndex] = useState(0);
+
   const nextPicture = () => {
     let newIndex = pictureIndex + 1;
     if (newIndex > activeLogement.pictures.length - 1) {
@@ -11,6 +12,7 @@ const Carousel = ({ activeLogement }) => {
     }
     setPictureIndex(newIndex);
   };
+
   const previousPicture = () => {
     let newIndex = pictureIndex - 1;
     if (newIndex < 0) {
@@ -18,6 +20,7 @@ const Carousel = ({ activeLogement }) => {
     }
     setPictureIndex(newIndex);
   };
+
   return (
     <div className="carousel">
       <img
@@ -31,13 +34,13 @@ const Carousel = ({ activeLogement }) => {
             className="carousel__arrow carousel__arrow__left"
             src={arrow_left}
             onClick={previousPicture}
-            alt="Flèche de navigation retour"
+            alt="Afficher l'aperçu du logement précédent"
           />
           <img
             className="carousel__arrow carousel__arrow__right"
             src={arrow_right}
             onClick={nextPicture}
-            alt="Flèche de navigation suivante"
+            alt="Afficher l'aperçu du logement suivant"
           />
           <p className="carousel__picture-counter">
             {pictureIndex + 1}/{activeLogement.pictures.length}

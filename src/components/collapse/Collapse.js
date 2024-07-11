@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
 
-const Collapse = (props) => {
+const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const collapseTitle = props.title;
-  const collapseContent = props.content;
 
   return (
     <div className="collapse-container">
@@ -12,7 +10,7 @@ const Collapse = (props) => {
         className="collapse-container__title"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {collapseTitle}
+        {title}
         <div className="collapse-container__arrow-container">
           <img
             className={
@@ -37,14 +35,14 @@ const Collapse = (props) => {
             isOpen ? "collapse-container__content__open" : ""
           }`}
         >
-          {Array.isArray(collapseContent) ? (
+          {Array.isArray(content) ? (
             <ul>
-              {collapseContent.map((content, i) => (
+              {content.map((content, i) => (
                 <li key={content + "-" + i}>{content}</li>
               ))}
             </ul>
           ) : (
-            <div>{collapseContent}</div>
+            <div>{content}</div>
           )}
         </div>
       </div>

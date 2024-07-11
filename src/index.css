@@ -7,6 +7,12 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   padding: 45px 100px 0 100px;
   margin: 0;
