@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  cursor: pointer;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
