@@ -5,7 +5,7 @@ import "./Stars.css";
 
 const Stars = ({ rating }) => {
   return (
-    <div>
+    <div className="stars-container">
       {Array.from({ length: 5 }, (_, index) => (
         <img
           className={`star ${rating > index ? "star__red" : "star__grey"}`}
