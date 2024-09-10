@@ -1,22 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const innerContentRef = useRef(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      setHeight(innerContentRef.current.scrollHeight);
+    } else {
+      setHeight(0);
+    }
+  }, [isOpen]);
+
+  const toggleCollapse = () => {
+    setIsOpen((prevState) => !prevState);
+  };
 
   return (
     <div className="collapse-container">
-      <h3
-        className="collapse-container__title"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <h3 className="collapse-container__title" onClick={toggleCollapse}>
         {title}
         <div className="collapse-container__arrow-container">
           <img
             className={
               isOpen
-                ? "collapse-container__arrow-container__arrow collapse-container__arrow-container__arrow__in"
-                : "collapse-container__arrow-container__arrow collapse-container__arrow-container__arrow__out"
+                ? "collapse-container__arrow-container__arrow collapse-container__arrow-container__arrow__out"
+                : "collapse-container__arrow-container__arrow collapse-container__arrow-container__arrow__in"
             }
             src={require("../../assets/arrow_up.png")}
             alt=""
@@ -24,17 +35,10 @@ const Collapse = ({ title, content }) => {
         </div>
       </h3>
       <div
-        className={
-          isOpen
-            ? "collapse-container__content is-open"
-            : "collapse-container__content"
-        }
+        className="collapse-container__content-wrapper"
+        style={{ height: `${height}px` }}
       >
-        <div
-          className={`collapse-container__content__text ${
-            isOpen ? "collapse-container__content__open" : ""
-          }`}
-        >
+        <div className="collapse-container__content" ref={innerContentRef}>
           {Array.isArray(content) ? (
             <ul>
               {content.map((content, i) => (

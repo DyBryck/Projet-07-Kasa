@@ -21,8 +21,8 @@
   justify-content: center;
 }
 .collapse-container__arrow-container__arrow {
-  width: 24px;
-  height: 14px;
+  width: 20px;
+  height: 10px;
 }
 .collapse-container__arrow-container__arrow__in {
   transition: transform 0.5s ease-in-out;
@@ -32,19 +32,13 @@
   transition: transform 0.5s ease-in-out;
   transform: rotate(0deg);
 }
-.collapse-container__content__text {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
+.collapse-container__content-wrapper {
   height: 0;
   overflow: hidden;
-  transition: 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
   background-color: #f6f6f6;
   border-radius: 5px;
 }
-.collapse-container__content__open {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: auto;
+.collapse-container__content {
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

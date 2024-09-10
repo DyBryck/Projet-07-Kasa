@@ -39,23 +39,15 @@
     }
   }
 
-  &__content {
-    &__text {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 0;
-      padding-bottom: 0;
-      height: 0;
-      overflow: hidden;
-      transition: 0.8s ease-in-out;
-      background-color: #f6f6f6;
-      border-radius: 5px;
-    }
+  &__content-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+  }
 
-    &__open {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      height: auto;
-    }
+  &__content {
+    padding: 20px;
   }
 }
